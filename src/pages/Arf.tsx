@@ -115,7 +115,7 @@ Interactive UI – The UI should give a sense of joy and  encourage discovery th
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
         <FlatList
           list={[
-            "/gifs/sausagecut.GIF",
+            "/gifs/sausagecut.gif",
             "/images/hudassets.png",
             "/images/arfmenuassets.png",
             "/images/winscreenassets.png",
@@ -124,7 +124,7 @@ Interactive UI – The UI should give a sense of joy and  encourage discovery th
             "/gifs/bonussausage.gif",
             "/images/buttonprompts.png",
             "/images/bonuskibble.png",
-            "/gifs/kibblecollect.GIF",
+            "/gifs/kibblecollect.gif",
           ]}
           renderItem={(item, i) => (
             <img
