@@ -14,7 +14,7 @@ export default function SlideUpCard({
     <div
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      className="rounded-lg w-full max-w-sm md:max-w-md lg:max-w-lg min-h-96 md:min-h-80 
+      className="rounded-lg w-full min-h-96 md:min-h-80 
                  bg-gradient-to-tr from-[#CEC1C8] to-white bg-[size:_200%] 
                  hover:bg-[position:_100%_100%] transition-all duration-500 
                  flex flex-col justify-center items-center p-4"

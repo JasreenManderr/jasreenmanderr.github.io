@@ -37,13 +37,11 @@ export default function SideBar() {
   const toggleSidebar = () => setIsOpen(!isOpen);
 
   const handleInternalNavigation = (title: string): any => {
-    console.log("RUNNING", title == "About");
     if (title == "Work") {
       navigate("/");
       return;
     }
     if (title == "About") {
-      console.log("RANNN");
       navigate("/about");
     }
   };
@@ -52,7 +50,7 @@ export default function SideBar() {
     <div className="flex">
       {/* Sidebar */}
       <aside
-        className={`fixed mt-20 left-0 z-40 w-[20rem]  transition-transform bg-[#DBD6D3] ${
+        className={`fixed mt-20 left-0 z-40 w-[20rem] ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } sm:translate-x-0`}
         aria-label="Sidebar"

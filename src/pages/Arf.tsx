@@ -21,7 +21,7 @@ export default function ArfPage() {
         A.R.F SQUAD
       </h1>
       <br />
-      <div className="grid grid-cols-1" id="carousel-arf">
+      {/*<div className="grid grid-cols-1" id="carousel-arf">
         <Carousel
           additionalTransfrom={0}
           arrows
@@ -79,7 +79,7 @@ export default function ArfPage() {
             style={{ aspectRatio: 16 / 9 }}
           />
         </Carousel>
-      </div>
+      </div>*/}
       <br />
       <TwoColumnOverview
         teamText="Buggy Room Studios"
@@ -101,6 +101,10 @@ export default function ArfPage() {
           headerText="“Goofy, Party, Fun”"
           bodyText="Simple & Intuitive UI – Players should jump in without a steep learning curve. Playful Visuals & Motion – The UI should be expressive, animated, and energetic. Bold Colors & Cartoon Style – Reinforce the game’s fun and nostalgic theme."
         />
+        
+      </div>
+      <br />
+      <div className="">
         <SlideUpCard
           headerText="“Continuous Excitement & Discovery”"
           bodyText="Clear Feedback for Game Events – Players should always know when they’re leading or losing.
@@ -111,31 +115,38 @@ Interactive UI – The UI should give a sense of joy and  encourage discovery th
       <div className="grid grid-cols-1">
         <div style={{ width: 15000, height: "100%" }} className=""></div>
       </div>
-      <h2 className="text-2xl font-semibold">Assets</h2>
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+      <h2 className="text-xl md:text-2xl font-semibold text-center">UI Art</h2>
+      <div className="grid gap-6 grid-cols-1">
         <FlatList
           list={[
-            "/gifs/sausagecut.gif",
-            "/images/hudassets.png",
-            "/images/arfmenuassets.png",
-            "/images/winscreenassets.png",
-            "/gifs/confetti.gif",
-            "/gifs/playersausagereveal.gif",
-            "/gifs/bonussausage.gif",
-            "/images/buttonprompts.png",
-            "/images/bonuskibble.png",
-            "/gifs/kibblecollect.gif",
+            "/images/menuassets.png",
+            "/images/newwinscreenassets.png",
+            "/images/selectionscreenassets.png",
+            "/images/newhudassets.png",
+            "/images/arfscreenmockup1.png",
+            "/images/arfscreenmockup2.png",
+            "/images/arfscreenmockup3.png",
+            "/images/arfscreenmockup4.png"
           ]}
           renderItem={(item, i) => (
+            <>
+              {item == "/images/arfscreenmockup1.png" && <h3 style={{fontWeight: "900"}} className="font-bold text-center text-lg md:text-xl">Screen Mockups</h3> }
             <img
               src={item}
-              alt={`Asset ${i + 1}`}
-              className="w-full h-full border-black border-2 rounded-md"
+              alt={`ArfSquad Asset ${i + 1}`}
+              className="w-full h-full"
             />
+
+            </>
           )}
         />
       </div>
       <br />
+      <h3 style={{fontWeight: "900"}} className="font-bold text-center text-lg md:text-xl">Animation Reel</h3> 
+      <br />
+      <video controls className="w-full h-full" src="/videos/arfgameplay.mp4" />
+      <br />
+
       <div id="arrows-using" className="w-full relative">
         <div className="absolute left-0">
           {/* <ArrowButton onClick={On} direction="left" /> */}

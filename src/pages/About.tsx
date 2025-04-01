@@ -63,25 +63,28 @@ export default function AboutPage() {
             <br />
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <li className="flex items-center mb-3">
-                <img src="/images/softwareicon.png" alt="software icon" />
+                <img className="w-24 lg:w-full" src="/images/softwareicon.png" alt="software icon" />
               </li>
               <li className="flex items-center mb-3">
-                <img src="/images/figmaicon.png" alt="figma icon" />
+                <img className="w-24 lg:w-full" src="/images/figmaicon.png" alt="figma icon" />
               </li>
               <li className="flex items-center mb-3">
                 <img
+                  className="w-24 lg:w-full"
                   src="/images/adobeillustratoricon.png"
                   alt="Adobe illustrator icon"
                 />
               </li>
               <li className="flex items-center mb-3">
                 <img
+                  className="w-24 lg:w-full"
                   src="/images/unitygameengineicon.png"
                   alt="Unity game engine icon"
                 />
               </li>
               <li className="flex items-center mb-3">
                 <img
+                  className="w-24 lg:w-full"
                   src="/images/adobephotoshopicon.png"
                   alt="Adobe photoshop icon"
                 />

@@ -7,10 +7,11 @@
 @import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible');
  
 
-body {
+body, aside {
   
-  background-color: #DBD6D3;
+  background-color: #E3F0F6;
 }
+
 
 h1 {
   color: #294C3E;
@@ -22,6 +23,10 @@ h2 {
 }
 
 h3 {
+  font-family: "Kalnia";
+}
+
+h4 {
   font-family: "Kalnia";
 }
 

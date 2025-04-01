@@ -56,48 +56,85 @@ export default function AnsPage() {
           </div>
         </div>
         <br />
-        <h3 className="text-xl md:text-2xl">Wireframes</h3>
+        <h2 className="font-black text-xl md:text-2xl ">Unity Editor Window</h2>
         <br />
-        <img
-          alt="ans wireframe"
-          src="/images/answireframe.png"
-          className="w-full h-full"
-        />
+        <h3 className="font-bold text-lg md:text-xl">Overview</h3>
         <br />
-        <p>Before:</p>
-        <ul className="list-disc ml-10">
-          <li>Sidebar lacked headers, making information hard to scan.</li>
-          <li>
-            Checkbox to close the sidebar was far from its instructional text.
-          </li>
-          <li>
-            Canvas was cluttered with unnecessary elements, including the center
-            node.
-          </li>
+        <p>
+          The studio uses a custom node-based Unity editor window. During my internship, I did a UI audit to evaluate its usability and identify areas for improvement. I analyzed the editor’s layout, structure, and visual hierarchy. I wire framed solutions to address key usability issues, focusing on improving organization, enhancing readability, and optimizing user interactions for a more intuitive experience.
+        </p>
+        <br />
+        <h4 className="font-bold text-lg md:text-xl">Challenges</h4>
+        <br />
+        <p>
+          To identify key challenges within the UI, I conducted an audit by reviewing its overall structure, organization, and interactions. I examined key interface elements such as the sidebar, canvas, and settings, comparing them against usability best practices and industry standards. Through this audit, I identified the following three usability issues within the editor:
+        </p>
+        <br />
+        <ul className="list-disc list-inside pl-5">
+          <li>Lack of headers in the sidebar, making it difficult to scan information.</li>
+          <li>Poor checkbox placement, where the option to close the sidebar was far from its instructional text.</li>
+          <li>Cluttered canvas, with unnecessary elements, including a redundant center node.</li>
         </ul>
-        <br />
-        <p>After</p>
-        <ul className="list-disc ml-10">
-          <li>Added clear headers for better organization and readability.</li>
-          <li>Replaced the checkbox with a more intuitive icon.</li>
-          <li>Moved center node settings to the sidebar under "Settings."</li>
-          <li>
-            Kept only essential canvas controls: sidebar toggle icon, zoom bar,
-            and scale factor.
-          </li>
-          <li>
-            Improved usability and created a cleaner, more streamlined
-            interface.
-          </li>
-        </ul>
-        <br />
 
-        <img
-          alt="ans wireframe"
-          src="/images/answireframe2.png"
-          className="w-full h-full"
-        />
+        
         <br />
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <p className="pl-48">Before</p>
+            <img className="w-50" src="/images/answireframe.png" />
+          </div>
+          <div>
+            <p className="pl-48">After</p>
+            <img src="/images/answireframe2.png" />
+          </div>
+        </div>
+        <br />
+        <h4 className="font-bold text-lg md:text-xl">
+          Solutions
+        </h4>
+        <br />
+        <p>
+          Within my wire frame I implemented the following solutions to improve the usability of the editor:
+        </p>
+        <br />
+        <ul className="list-disc list-inside pl-5">
+          <li>Added clear headers to improve organization and readability in the sidebar.</li>
+          <li>Replaced the checkbox with a more intuitive icon to streamline interaction.</li>
+          <li>Moved center node settings to the sidebar under a newly created “Settings” section for better organization.</li>
+          <li>Removed unnecessary canvas controls, leaving only the essential elements: sidebar toggle, zoom bar, and scale factor.</li>
+          <li>Enhanced usability by simplifying the interface, creating a cleaner, more intuitive user experience.</li>
+        </ul>
+        <br />
+        <h2 className="font-black text-xl md:text-2xl">Bullet In Time</h2>
+        <br />
+        <h3>Game Overview</h3>
+        <p>A Bullet in Time is a puzzle-action game set in a cyber dystopia where players must rescue their scientist sister using a time-stopping gauntlet. Players plan and execute actions within a time-stop environment to solve puzzles, defeat enemies, and navigate obstacles. The game features a tactical approach where each level offers multiple solutions, combining elements of logic puzzles and action-based gameplay.</p>
+        <br />
+        <h3 className="font-bold text-lg md:text-xl">My Role:</h3>
+        <ul className="list-disc list-inside pl-5">
+          <li>Designed the HUD, dialogue boxes, action cards, and main menu with a cyber-futuristic theme and pixel art style.</li>
+          <li>Selected fonts and color palette to enhance the game's visual theme and environment.</li>
+          <li>Implemented UI assets in Unity and set up the canvas for proper functionality.</li>
+        </ul>
+
+        <br />
+        <h3 className="font-bold text-lg md:text-xl">Wireframes</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div>
+            <p className="pl-48">Game</p>
+            <img src="/images/gameoverlay.jpeg" />
+          </div>
+          <div>
+            <p className="pl-48">Main menu</p>
+            <img src="/images/menubtns.jpeg" />
+          </div>
+        </div>
+        <br />
+      
+
+
+
+        
         <div id="arrows-using" className="w-full relative">
           <div className="absolute left-0">
             <ArrowButton onClick={onClickArrowBack} direction="left" />
